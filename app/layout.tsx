@@ -2,17 +2,17 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'NYU Biomedical SciComm',
+  title: 'NYU SciComm',
   description:
-    'An independent publication by NYU graduate students, making research accessible, engaging, and relevant.',
+    'A graduate student publication at New York University making science accessible and engaging.',
   openGraph: {
-    title: 'NYU Biomedical SciComm',
-    description: 'Biomedical science, from the people who study it.',
+    title: 'NYU SciComm',
+    description: 'Accessible and engaging science from NYU graduate students.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'NYU Biomedical SciComm',
-    description: 'Biomedical science, from the people who study it.',
+    title: 'NYU SciComm',
+    description: 'Accessible and engaging science from NYU graduate students.',
   },
 };
 

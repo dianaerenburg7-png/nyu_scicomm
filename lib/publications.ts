@@ -4,7 +4,7 @@ export type Publication = {
   subtitle: string;
   author: string;
   published: string;
-  topic: 'Health' | 'Environment' | 'Technology' | 'Life Sciences' | 'Space & Physics';
+  topic: string;
   image: string;
   imageAlt: string;
 };

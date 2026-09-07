@@ -1,25 +1,21 @@
 import { Menu, Search } from 'lucide-react';
 import { publications } from '@/lib/publications';
 
-const topics = ['Biology', 'Neuroscience', 'Medicine & Health', 'Genetics', 'Bioengineering', 'Public Health'];
-
 export default function Home() {
   return (
     <main>
       <a className="skip-link" href="#content">Skip to content</a>
       <header className="masthead">
         <div className="brand-lockup">
-          <a className="brand" href="#top" aria-label="NYU Biomedical Science Communication home">
-            <span>NYU</span> BIOMED<span className="brand-light">SCI</span>
+          <a className="brand" href="#top" aria-label="NYU Science Communication home">
+            SCI<span className="brand-light">COMM</span>
           </a>
-          <p>BIOMEDICAL SCIENCE, FROM THE PEOPLE WHO STUDY IT</p>
-          <small>A graduate student publication at New York University</small>
+          <p>A GRADUATE STUDENT PUBLICATION AT NEW YORK UNIVERSITY</p>
         </div>
         <nav className="main-nav" aria-label="Main navigation">
-          <a href="#topics">TOPICS <span aria-hidden="true">⌄</span></a>
           <a href="#publications">PUBLICATIONS</a>
           <a href="#about">ABOUT</a>
-          <a href="#contribute">CONTRIBUTE</a>
+          <a href="#participate">PARTICIPATE</a>
           <button aria-label="Search" disabled><Search size={18} /></button>
           <button className="mobile-menu" aria-label="Open menu"><Menu size={22} /></button>
         </nav>
@@ -29,19 +25,17 @@ export default function Home() {
         <img src="/biomedical-hero.png" alt="Fluorescence microscopy-inspired image of branching neurons and cell nuclei" />
         <div className="feature-shade" />
         <div className="feature-copy">
-          <p>NYU BIOMEDICAL SCIENCE COMMUNICATION</p>
+          <p>NYU SCIENCE COMMUNICATION</p>
           <h1 id="empty-title">No publications yet</h1>
-          <h2>Our first stories are in development.</h2>
         </div>
       </section>
 
       <div id="content">
         <section className="publication-section" id="publications">
-          <div className="section-title"><span>01</span><h2>Latest publications</h2></div>
+          <div className="section-title"><h2>Latest publications</h2></div>
           {publications.length === 0 ? (
             <div className="publication-empty">
               <p>This publication has not released any articles yet.</p>
-              <p>New reporting from NYU graduate students will appear here.</p>
             </div>
           ) : (
             <div className="publication-grid">
@@ -59,29 +53,30 @@ export default function Home() {
         </section>
 
         <section className="topics-section" id="topics">
-          <div className="section-title inverse"><span>02</span><h2>Topics</h2></div>
+          <div className="section-title inverse"><h2>Topics</h2></div>
           <div className="topic-grid">
-            {topics.map((topic) => <div className="topic" key={topic}><span>{topic}</span><b aria-hidden="true">→</b></div>)}
+            <a className="topic" href="#publications"><span>Science in the News 2026</span><b aria-hidden="true">→</b></a>
           </div>
         </section>
 
         <section className="about-section" id="about">
-          <div className="section-title"><span>03</span><h2>About</h2></div>
+          <div className="section-title"><h2>About</h2></div>
           <div className="about-copy">
-            <p className="about-lede">We translate biomedical research into stories for curious readers.</p>
-            <p>Written and edited by graduate students at New York University, this publication explores biology, neuroscience, medicine, genetics, bioengineering, and public health with clarity and care.</p>
+            <p className="about-lede">We host a space for students to write, learn, and discuss science across and within disciplines.</p>
+            <p>Written and edited by graduate students at New York University, this publication explores biology, neuroscience, medicine, genetics, bioengineering, and public health.</p>
           </div>
         </section>
 
-        <section className="contribute-section" id="contribute">
-          <p>CONTRIBUTE</p><h2>Have a biomedical story to tell?</h2><span>Contributor information will be added before submissions open.</span>
+        <section className="contribute-section" id="participate">
+          <p>PARTICIPATE</p><h2>Interested in writing or editing?</h2>
+          <span>Please reach out to <a href="mailto:diana.erenburg@nyulangone.org">diana.erenburg@nyulangone.org</a>, <a href="mailto:bella.ranieri@nyulangone.org">bella.ranieri@nyulangone.org</a>, or <a href="mailto:theo.durand@nyulangone.org">theo.durand@nyulangone.org</a>.</span>
         </section>
       </div>
 
       <footer>
-        <div className="footer-brand">NYU BIOMEDSCI</div>
-        <p>A graduate student biomedical science publication at New York University.</p>
-        <p>© {new Date().getFullYear()} NYU Biomedical SciComm</p>
+        <div className="footer-brand">NYU SCICOMM</div>
+        <p>A graduate student science publication at New York University.</p>
+        <p>© {new Date().getFullYear()} NYU SciComm</p>
       </footer>
     </main>
   );
