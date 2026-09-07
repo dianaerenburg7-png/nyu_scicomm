@@ -7,7 +7,7 @@ This site is designed for one owner and can be published without a paid plan.
 1. Replace the contact placeholders in `app/page.tsx` with the club's real email address or form link.
 2. Adjust the club name, mission, and topic list if needed.
 3. Create a free GitHub account or organization owned by the club, not a departing member.
-4. Publish to a free `pages.dev` address. Do not buy a custom domain if the budget must remain $0.
+4. Publish to a free `pages.dev` address. Readers will not need an account or a login. Do not buy a custom domain if the budget must remain $0.
 
 ## Adding a publication
 
@@ -28,4 +28,10 @@ The homepage shows “No publications yet” while the array is empty. Once an a
 
 ## Free hosting
 
-Connect this repository to Cloudflare Pages or deploy through Sites. Use the provider's free subdomain. A custom domain is optional and is the only common cost this setup intentionally avoids.
+Connect this repository to Cloudflare Pages and use its free `pages.dev` subdomain. The site is a static export, so it does not require a paid server, database, or subscription. A custom domain is optional and intentionally omitted so the total cost remains $0.
+
+Use these Cloudflare Pages settings:
+
+- Build command: `pnpm build`
+- Output directory: `dist/client`
+- Node.js version: `22`
