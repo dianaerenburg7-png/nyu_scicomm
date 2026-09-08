@@ -60,7 +60,7 @@ export default function Home() {
         </section>
 
         <section className="about-section" id="about">
-          <div className="about-heading"><h2>About NYU SciComm</h2></div>
+          <div className="section-title"><h2>About</h2></div>
           <div className="about-copy">
             <p>NYU SciComm is a graduate student-run publication where students can write, learn, and discuss science across disciplines. We publish accessible and engaging stories about research at NYU and beyond.</p>
           </div>
