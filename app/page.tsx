@@ -62,8 +62,7 @@ export default function Home() {
         <section className="about-section" id="about">
           <div className="about-heading"><h2>About NYU SciComm</h2></div>
           <div className="about-copy">
-            <p>NYU SciComm is a graduate student-run science publication at New York University. We host a space for students to write, learn, and discuss science across and within disciplines.</p>
-            <p>Our writers and editors are NYU graduate students. Together, we publish accessible and engaging stories about research, discovery, and the role of science in everyday life.</p>
+            <p>NYU SciComm is a graduate student-run publication where students can write, learn, and discuss science across disciplines. We publish accessible and engaging stories about research at NYU and beyond.</p>
           </div>
         </section>
 
