@@ -1,4 +1,5 @@
-import { Menu, Search } from 'lucide-react';
+import { Search } from 'lucide-react';
+import { MobileMenu } from '@/components/mobile-menu';
 import { publications } from '@/lib/publications';
 
 export default function Home() {
@@ -17,7 +18,7 @@ export default function Home() {
           <a href="#about">ABOUT</a>
           <a href="#participate">PARTICIPATE</a>
           <button aria-label="Search" disabled><Search size={18} /></button>
-          <button className="mobile-menu" aria-label="Open menu"><Menu size={22} /></button>
+          <MobileMenu />
         </nav>
       </header>
 
