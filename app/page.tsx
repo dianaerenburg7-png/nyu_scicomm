@@ -69,7 +69,7 @@ export default function Home() {
 
         <section className="contribute-section" id="participate">
           <p>PARTICIPATE</p><h2>Interested in writing or editing?</h2>
-          <span>Please reach out to <a href="mailto:bella.ranieri@nyulangone.org">bella.ranieri@nyulangone.org</a>, <a href="mailto:diana.erenburg@nyulangone.org">diana.erenburg@nyulangone.org</a>, or <a href="mailto:theo.durand@nyulangone.org">theo.durand@nyulangone.org</a>.</span>
+          <span>Please reach out to <a href="mailto:isabella.ranieri@nyulangone.org">isabella.ranieri@nyulangone.org</a>, <a href="mailto:diana.erenburg@nyulangone.org">diana.erenburg@nyulangone.org</a>, or <a href="mailto:theo.durand@nyulangone.org">theo.durand@nyulangone.org</a>.</span>
         </section>
       </div>
 
