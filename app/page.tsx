@@ -14,7 +14,7 @@ export default function Home() {
           <p>A GRADUATE STUDENT-LED JOURNAL AT NEW YORK UNIVERSITY</p>
         </div>
         <nav className="main-nav" aria-label="Main navigation">
-          <a href="#publications">PUBLICATIONS</a>
+          <a href="#publications">ARTICLES</a>
           <a href="#about">ABOUT</a>
           <a href="#participate">PARTICIPATE</a>
           <button aria-label="Search" disabled><Search size={18} /></button>
@@ -27,13 +27,13 @@ export default function Home() {
         <div className="feature-shade" />
         <div className="feature-copy">
           <p>NYU SCIENCE COMMUNICATION</p>
-          <h1 id="empty-title">No publications yet</h1>
+          <h1 id="empty-title">No articles yet</h1>
         </div>
       </section>
 
       <div id="content">
         <section className="publication-section" id="publications">
-          <div className="section-title"><h2>Latest publications</h2></div>
+          <div className="section-title"><h2>Latest articles</h2></div>
           {publications.length === 0 ? (
             <div className="publication-empty">
               <p>This journal has not released any articles yet.</p>

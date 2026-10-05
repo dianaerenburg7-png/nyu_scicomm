@@ -4,7 +4,7 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'NYU SciComm',
   description:
-    'A graduate student publication at New York University making science accessible and engaging.',
+    'A graduate student-led journal at New York University publishing accessible and engaging science articles.',
   openGraph: {
     title: 'NYU SciComm',
     description: 'Accessible and engaging science from NYU graduate students.',
