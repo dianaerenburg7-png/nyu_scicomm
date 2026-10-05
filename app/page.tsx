@@ -8,8 +8,8 @@ export default function Home() {
       <a className="skip-link" href="#content">Skip to content</a>
       <header className="masthead">
         <div className="brand-lockup">
-          <a className="brand" href="#top" aria-label="NYU Science Communication home">
-            SCI<span className="brand-light">COMM</span>
+          <a className="brand" href="#top" aria-label="Violet Matters home">
+            VIOLET<span className="brand-light">MATTERS</span>
           </a>
           <p>A GRADUATE STUDENT-LED JOURNAL AT NEW YORK UNIVERSITY</p>
         </div>
@@ -26,7 +26,7 @@ export default function Home() {
         <img src="/biomedical-hero.png" alt="Fluorescence microscopy-inspired image of branching neurons and cell nuclei" />
         <div className="feature-shade" />
         <div className="feature-copy">
-          <p>NYU SCIENCE COMMUNICATION</p>
+          <p>VIOLET MATTERS</p>
           <h1 id="empty-title">No articles yet</h1>
         </div>
       </section>
@@ -63,7 +63,7 @@ export default function Home() {
         <section className="about-section" id="about">
           <div className="section-title"><h2>About</h2></div>
           <div className="about-copy">
-            <p className="about-lede">NYU SciComm is a graduate student-led journal that publishes accessible and engaging stories about research at NYU and beyond.</p>
+            <p className="about-lede">Violet Matters is a graduate student-led journal that publishes accessible and engaging stories about research at NYU and beyond.</p>
           </div>
         </section>
 
@@ -74,9 +74,9 @@ export default function Home() {
       </div>
 
       <footer>
-        <div className="footer-brand">NYU SCICOMM</div>
+        <div className="footer-brand">VIOLET MATTERS</div>
         <p>A graduate student-led science journal at New York University.</p>
-        <p>© {new Date().getFullYear()} NYU SciComm</p>
+        <p>© {new Date().getFullYear()} Violet Matters</p>
       </footer>
     </main>
   );
