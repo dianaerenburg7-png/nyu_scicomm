@@ -8,9 +8,9 @@ export default function Home() {
       <a className="skip-link" href="#content">Skip to content</a>
       <header className="masthead">
         <div className="brand-lockup">
-          <a className="brand" href="#top" aria-label="Violet Matters home">
+          <a className="brand" href="#top" aria-label="Violet Matter home">
             <span className="brand-primary">VIOLET</span>
-            <span className="brand-light">MATTERS</span>
+            <span className="brand-light">MATTER</span>
           </a>
           <p>A GRADUATE STUDENT-LED JOURNAL AT NEW YORK UNIVERSITY</p>
         </div>
@@ -27,7 +27,7 @@ export default function Home() {
         <img src="/biomedical-hero.png" alt="Fluorescence microscopy-inspired image of branching neurons and cell nuclei" />
         <div className="feature-shade" />
         <div className="feature-copy">
-          <p>VIOLET MATTERS</p>
+          <p>VIOLET MATTER</p>
           <h1 id="empty-title">No articles yet</h1>
         </div>
       </section>
@@ -64,7 +64,7 @@ export default function Home() {
         <section className="about-section" id="about">
           <div className="section-title"><h2>About</h2></div>
           <div className="about-copy">
-            <p className="about-lede">Violet Matters is a graduate student-led journal that publishes accessible and engaging stories about research at NYU and beyond.</p>
+            <p className="about-lede">Violet Matter is a graduate student-led journal that publishes accessible and engaging stories about research at NYU and beyond.</p>
           </div>
         </section>
 
@@ -75,9 +75,9 @@ export default function Home() {
       </div>
 
       <footer>
-        <div className="footer-brand">VIOLET MATTERS</div>
+        <div className="footer-brand">VIOLET MATTER</div>
         <p>A graduate student-led science journal at New York University.</p>
-        <p>© {new Date().getFullYear()} Violet Matters</p>
+        <p>© {new Date().getFullYear()} Violet Matter</p>
       </footer>
     </main>
   );
