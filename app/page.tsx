@@ -11,7 +11,7 @@ export default function Home() {
           <a className="brand" href="#top" aria-label="NYU Science Communication home">
             SCI<span className="brand-light">COMM</span>
           </a>
-          <p>A GRADUATE STUDENT PUBLICATION AT NEW YORK UNIVERSITY</p>
+          <p>A GRADUATE STUDENT-LED JOURNAL AT NEW YORK UNIVERSITY</p>
         </div>
         <nav className="main-nav" aria-label="Main navigation">
           <a href="#publications">PUBLICATIONS</a>
@@ -36,7 +36,7 @@ export default function Home() {
           <div className="section-title"><h2>Latest publications</h2></div>
           {publications.length === 0 ? (
             <div className="publication-empty">
-              <p>This publication has not released any articles yet.</p>
+              <p>This journal has not released any articles yet.</p>
             </div>
           ) : (
             <div className="publication-grid">
@@ -63,7 +63,7 @@ export default function Home() {
         <section className="about-section" id="about">
           <div className="section-title"><h2>About</h2></div>
           <div className="about-copy">
-            <p className="about-lede">NYU SciComm is a graduate student-run publication where students can write, learn, and discuss science across disciplines. We publish accessible and engaging stories about research at NYU and beyond.</p>
+            <p className="about-lede">NYU SciComm is a graduate student-led journal where students can write, learn, and discuss science across disciplines. We publish accessible and engaging stories about research at NYU and beyond.</p>
           </div>
         </section>
 
@@ -75,7 +75,7 @@ export default function Home() {
 
       <footer>
         <div className="footer-brand">NYU SCICOMM</div>
-        <p>A graduate student science publication at New York University.</p>
+        <p>A graduate student-led science journal at New York University.</p>
         <p>© {new Date().getFullYear()} NYU SciComm</p>
       </footer>
     </main>
