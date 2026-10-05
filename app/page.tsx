@@ -9,7 +9,8 @@ export default function Home() {
       <header className="masthead">
         <div className="brand-lockup">
           <a className="brand" href="#top" aria-label="Violet Matters home">
-            VIOLET<span className="brand-light">MATTERS</span>
+            <span className="brand-primary">VI<span className="brand-violet">O</span>LET</span>
+            <span className="brand-light">MATTERS</span>
           </a>
           <p>A GRADUATE STUDENT-LED JOURNAL AT NEW YORK UNIVERSITY</p>
         </div>
