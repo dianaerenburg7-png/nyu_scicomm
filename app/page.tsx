@@ -9,8 +9,8 @@ export default function Home() {
       <header className="masthead">
         <div className="brand-lockup">
           <a className="brand" href="#top" aria-label="The Bench home">
-            <span className="brand-primary">THE</span>
-            <span className="brand-light">BENCH</span>
+            <span className="brand-light">THE</span>
+            <span className="brand-primary">BENCH</span>
           </a>
           <p>A GRADUATE STUDENT-LED JOURNAL AT NEW YORK UNIVERSITY</p>
         </div>
