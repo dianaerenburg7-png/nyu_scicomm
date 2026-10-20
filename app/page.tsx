@@ -12,7 +12,7 @@ export default function Home() {
             <span className="brand-light">THE</span>
             <span className="brand-primary">BENCH</span>
           </a>
-          <p>A GRADUATE STUDENT-LED JOURNAL AT NEW YORK UNIVERSITY</p>
+          <p>A GRADUATE STUDENT-LED JOURNAL AT NYU VILCEK INSTITUTE OF GRADUATE BIOMEDICAL SCIENCES</p>
         </div>
         <nav className="main-nav" aria-label="Main navigation">
           <a href="#publications">ARTICLES</a>
@@ -76,7 +76,7 @@ export default function Home() {
 
       <footer>
         <div className="footer-brand">THE BENCH</div>
-        <p>A graduate student-led science journal at New York University.</p>
+        <p>A graduate student-led science journal at NYU Vilcek Institute of Graduate Biomedical Sciences.</p>
         <p>© {new Date().getFullYear()} The Bench</p>
       </footer>
     </main>
