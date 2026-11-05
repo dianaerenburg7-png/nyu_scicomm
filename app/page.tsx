@@ -2,6 +2,12 @@ import { Search } from 'lucide-react';
 import { MobileMenu } from '@/components/mobile-menu';
 import { publications } from '@/lib/publications';
 
+const articleSections = [
+  { id: 'close-to-home', title: 'Close to Home: Science at NYU' },
+  { id: 'interviews', title: 'Interviews' },
+  { id: 'op-eds', title: 'Op-Eds' },
+];
+
 export default function Home() {
   return (
     <main>
@@ -35,23 +41,35 @@ export default function Home() {
       <div id="content">
         <section className="publication-section" id="publications">
           <div className="section-title"><h2>Latest articles</h2></div>
-          {publications.length === 0 ? (
-            <div className="publication-empty">
-              <p>This journal has not released any articles yet.</p>
-            </div>
-          ) : (
-            <div className="publication-grid">
-              {publications.map((publication) => (
-                <article className="publication-card" key={publication.slug}>
-                  <img src={publication.image} alt={publication.imageAlt} />
-                  <a className="card-topic" href={`#${publication.topic.toLowerCase()}`}>{publication.topic}</a>
-                  <h3>{publication.title}</h3>
-                  <p>{publication.subtitle}</p>
-                  <span>By {publication.author} · {publication.published}</span>
-                </article>
-              ))}
-            </div>
-          )}
+          <div className="article-sections">
+            {articleSections.map((section) => {
+              const sectionArticles = publications.filter((publication) => publication.topic === section.title);
+
+              return (
+                <section className="article-subsection" id={section.id} key={section.id}>
+                  <div className="article-subsection-heading">
+                    <h3>{section.title}</h3>
+                    <span>{sectionArticles.length === 0 ? 'No articles yet' : `${sectionArticles.length} ${sectionArticles.length === 1 ? 'article' : 'articles'}`}</span>
+                  </div>
+                  {sectionArticles.length === 0 ? (
+                    <p className="article-subsection-empty">No articles have been published in this section yet.</p>
+                  ) : (
+                    <div className="publication-grid">
+                      {sectionArticles.map((publication) => (
+                        <article className="publication-card" key={publication.slug}>
+                          <img src={publication.image} alt={publication.imageAlt} />
+                          <a className="card-topic" href={`#${section.id}`}>{publication.topic}</a>
+                          <h3>{publication.title}</h3>
+                          <p>{publication.subtitle}</p>
+                          <span>By {publication.author} · {publication.published}</span>
+                        </article>
+                      ))}
+                    </div>
+                  )}
+                </section>
+              );
+            })}
+          </div>
         </section>
 
         <section className="topics-section" id="topics">

@@ -9,6 +9,6 @@ export type Publication = {
   imageAlt: string;
 };
 
-// Add approved stories here when the publication launches.
-// The homepage automatically replaces its empty state when this list has entries.
+// Add approved stories here when the journal launches.
+// Set topic to one of: "Close to Home: Science at NYU", "Interviews", or "Op-Eds".
 export const publications: Publication[] = [];
