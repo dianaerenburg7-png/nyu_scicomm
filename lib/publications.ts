@@ -10,5 +10,5 @@ export type Publication = {
 };
 
 // Add approved stories here when the journal launches.
-// Set topic to one of: "Close to Home: Science at NYU", "Interviews", or "Op-Eds".
+// Set topic to one of: "Close to Home: Science at NYU", "Interviews: In Their Own Words", or "Op-Eds".
 export const publications: Publication[] = [];

@@ -4,7 +4,7 @@ import { publications } from '@/lib/publications';
 
 const articleSections = [
   { id: 'close-to-home', title: 'Close to Home: Science at NYU' },
-  { id: 'interviews', title: 'Interviews' },
+  { id: 'interviews', title: 'Interviews: In Their Own Words' },
   { id: 'op-eds', title: 'Op-Eds' },
 ];
 
