@@ -3,9 +3,24 @@ import { MobileMenu } from '@/components/mobile-menu';
 import { publications } from '@/lib/publications';
 
 const articleSections = [
-  { id: 'close-to-home', title: 'Close to Home: Science at NYU' },
-  { id: 'interviews', title: 'Interviews: In Their Own Words' },
-  { id: 'op-eds', title: 'Op-Eds' },
+  {
+    id: 'close-to-home',
+    title: 'Close to Home: Science at NYU',
+    placeholderTitle: 'Lorem ipsum dolor sit amet',
+    placeholderText: 'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  },
+  {
+    id: 'interviews',
+    title: 'Interviews: In Their Own Words',
+    placeholderTitle: 'Ut enim ad minim veniam',
+    placeholderText: 'Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  },
+  {
+    id: 'op-eds',
+    title: 'Op-Eds',
+    placeholderTitle: 'Duis aute irure dolor',
+    placeholderText: 'Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+  },
 ];
 
 export default function Home() {
@@ -49,10 +64,18 @@ export default function Home() {
                 <section className="article-subsection" id={section.id} key={section.id}>
                   <div className="article-subsection-heading">
                     <h3>{section.title}</h3>
-                    <span>{sectionArticles.length === 0 ? 'No articles yet' : `${sectionArticles.length} ${sectionArticles.length === 1 ? 'article' : 'articles'}`}</span>
+                    <span>{sectionArticles.length === 0 ? 'Sample layout' : `${sectionArticles.length} ${sectionArticles.length === 1 ? 'article' : 'articles'}`}</span>
                   </div>
                   {sectionArticles.length === 0 ? (
-                    <p className="article-subsection-empty">No articles have been published in this section yet.</p>
+                    <div className="publication-grid">
+                      <article className="publication-card placeholder-card" aria-label={`Placeholder article for ${section.title}`}>
+                        <div className="placeholder-media" aria-hidden="true" />
+                        <span className="card-topic">Placeholder article</span>
+                        <h3>{section.placeholderTitle}</h3>
+                        <p>{section.placeholderText}</p>
+                        <span>By Author Name · Publication date</span>
+                      </article>
+                    </div>
                   ) : (
                     <div className="publication-grid">
                       {sectionArticles.map((publication) => (
